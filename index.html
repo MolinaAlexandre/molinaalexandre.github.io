@@ -1,39 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Alexandre Molina</title>
-  <!-- Inclure le lien vers Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <style>
-    /* Personnaliser le style pour le logo de construction */
-    body {
-      background-color: #f8f9fa;
-    }
-
-    .construction-logo {
-      text-align: center;
-      margin-top: 100px;
-    }
-
-    .construction-logo img {
-      width: 200px;
-    }
-
-    .under-construction {
-      font-size: 24px;
-      font-weight: bold;
-      margin-top: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <div class="construction-logo">
-      <div class="under-construction">Site en Construction</div>
-    </div>
-  </div>
+    <header class="container-fluid bg-primary text-white text-center py-5">
+        <div class="container">
+            <img src="votre-photo.jpg" alt="Votre Photo" class="rounded-circle mb-3" width="150">
+            <h1>Alexandre Molina</h1>
+            <div class="d-flex justify-content-center">
+                <div class="p-2">
+                    <img src="source/logo_c.svg" alt="Logo C" width="50">
+                    <p>C</p>
+                </div>
+                <div class="p-2">
+                    <img src="source/html-5.png" alt="Logo HTML" width="50">
+                    <p>HTML</p>
+                </div>
+                <div class="p-2">
+                    <img src="source/CSS.png" alt="Logo CSS" width="50">
+                    <p>CSS</p>
+                </div>
+            </div>
+        </div>
+    </header>
 
-  <!-- Inclure le script Bootstrap -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<body>
+    <div class="container">
+        <h1>Mes Projets</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">JAM EPITECH n°3</h5>
+                        <p class="card-text">réalisé en trinome avec Jules Reynaud & Adrien Jacq</p>
+                        <a href="#details_project_1" class="btn btn-primary">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projet 2</h5>
+                        <p class="card-text">PlaceHolder.</p>
+                        <a href="#details_project_2" class="btn btn-primary">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projet 3</h5>
+                        <p class="card-text">PlaceHolder</p>
+                        <a href="#details_project_3" class="btn btn-primary">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="details_project_1">
+        <div class="container mt-4">
+            <h2>Détails du Projet</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">JAM EPITECH 3</h5>
+                            <p class="card-text">Projet réalisé à l'occasion de la JAM epitech n°3 portant sur le theme <strong>[Yin & Yang]</strong></p>
+                            <p class="card-text"><strong>Date de réalisation:</strong> Janvier 2023</p>
+                            <p class="card-text"><strong>Réalisé pour:</strong> EPITECH</p>
+                            <a href="https://github.com/MolinaAlexandre/JAM_EPITECH_3" class="btn btn-primary">Visiter la page du projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="details_project_2">
+        <div class="container mt-4">
+            <h2>Détails du Projet</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <img src="projet-detail.jpg" class="card-img-top" alt="Détails du Projet">
+                        <div class="card-body">
+                            <h5 class="card-title">PlaceHolder</h5>
+                            <p class="card-text">PlaceHolder</p>
+                            <p class="card-text"><strong>Date de réalisation:</strong> PlaceHolder</p>
+                            <p class="card-text"><strong>Réalisé pour:</strong> PlaceHolder</p>
+                            <a href="#" class="btn btn-primary">Visiter la page du projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="details_project_3">
+        <div class="container mt-4">
+            <h2>Détails du Projet</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <img src="projet-detail.jpg" class="card-img-top" alt="Détails du Projet">
+                        <div class="card-body">
+                            <h5 class="card-title">PlaceHolder</h5>
+                            <p class="card-text">PlaceHolder</p>
+                            <p class="card-text"><strong>Date de réalisation:</strong> PlaceHolder</p>
+                            <p class="card-text"><strong>Réalisé pour:</strong> PlaceHolder</p>
+                            <a href="#" class="btn btn-primary">Visiter la page du projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
