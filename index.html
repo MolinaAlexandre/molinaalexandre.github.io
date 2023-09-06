@@ -131,7 +131,7 @@
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('My Project').textContent = data['My Project'];
-                    for (let i = 0; i < 3){
+                    for (let i = 0; i < 3; i++){
                         let answer = 'Learn More' + i;
                         document.getElementById(answer).textContent = data['Learn More'];
                     }
