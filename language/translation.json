@@ -1,0 +1,30 @@
+{
+    "My Project": {
+        "french":"Mes Projets",
+        "english":"My Projects"
+    },
+    "Learn More":{
+        "french":"En Savoir Plus",
+        "english":"Learn More"
+    },
+    "Project's Details":{
+        "french":"Détails du Projet:",
+        "english":"Project's Details"
+    },
+    "Realisation Date":{
+        "french":"Date de réalisation:",
+        "english":"Realisation date"
+    },
+    "Made For": {
+        "french":"Réalisé pour:",
+        "english":"Made for:"
+    },
+    "Used Language":{
+        "french":"Langage utilisé:",
+        "english":"Used language:"
+    },
+    "Visit Project's Page": {
+        "french":"Visiter la page du projet:",
+        "english":"Visit project's page:"
+    }
+}

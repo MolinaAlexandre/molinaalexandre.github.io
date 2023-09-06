@@ -124,27 +124,29 @@
         </div>
     </section>
     <script>
-    function chargerTraductions(langue) {
-        const jsonURL = `https://molinaalexandre.github.io/language/${langue}.json`;
-    
-        fetch(jsonURL)
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('My Project').textContent = data['My Project'];
-                document.getElementById('Learn More').textContent = data['Learn More'];
-                document.getElementById('Project\'s Details').textContent = data['Project\'s Details'];
-                document.getElementById('Realisation Date').textContent = data['Realisation Date'];
-                document.getElementById('Made For').textContent = data['Made For'];
-                document.getElementById('Used Language').textContent = data['Used Language'];
-                document.getElementById('Visit Project\'s Page').textContent = data['Visit Project\'s Page'];
-            });
-    }
-    
-    function changerLangue(langue) {
-        chargerTraductions(langue);
-    }
-    
-    chargerTraductions('french');
+        let translations = {}; // Objet pour stocker les traductions
+        function chargerTraductions(langue) {
+            const jsonURL = `https://molinaalexandre.github.io/language/translation.json`;
+
+    fetch(jsonURL)
+        .then(response => response.json())
+        .then(data => {
+            translations = data[langue];
+            appliquerTraductions();
+        });
+}
+
+function appliquerTraductions() {
+    // Parcourez tous les éléments avec des traductions
+    const elementsWithTranslation = document.querySelectorAll('[data-translate]');
+    elementsWithTranslation.forEach(element => {
+        const translationKey = element.getAttribute('data-translate');
+        if (translations.hasOwnProperty(translationKey)) {
+            element.textContent = translations[translationKey];
+        }
+    });
+}
+
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
