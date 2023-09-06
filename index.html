@@ -39,7 +39,7 @@
                     <div class="card-body">
                         <h5 class="card-title">JAM EPITECH n°3</h5>
                         <p class="card-text">réalisé en trinome avec Jules Reynaud & Adrien Jacq</p>
-                        <a href="#details_project_1" class="btn btn-primary" id="Learn More">En savoir plus</a>
+                        <a href="#details_project_1" class="btn btn-primary" id="Learn More0">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -131,9 +131,10 @@
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('My Project').textContent = data['My Project'];
-                    document.getElementById('Learn More').textContent = data['Learn More'];
-                    document.getElementById('Learn More1').textContent = data['Learn More'];
-                    document.getElementById('Learn More2').textContent = data['Learn More'];
+                    for (let i = 0; i < 3){
+                        let answer = 'Learn More' + i;
+                        document.getElementById(answer).textContent = data['Learn More'];
+                    }
                     document.getElementById('Project\'s Details').textContent = data['Project\'s Details'];
                     document.getElementById('Realisation Date').textContent = data['Realisation Date'];
                     document.getElementById('Made For').textContent = data['Made For'];
