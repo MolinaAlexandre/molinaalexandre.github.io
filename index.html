@@ -194,10 +194,11 @@
                         answer = 'Visit Project\'s Page' + i;
                         document.getElementById(answer).textContent = data['Visit Project\'s Page'];
                     }
-                    for (let i = 0; i < 4; i++){
-                        let answer = 'Carousel' + i;
-                        document.getElementById(answer).textContent = data[answer];
-                    }
+                        document.getElementById('Carousel0').textContent = data[Carousel0];
+                        document.getElementById('Carousel1').textContent = data[Carousel1];
+                        document.getElementById('Carousel2').textContent = data[Carousel2];
+                        document.getElementById('Carousel3').textContent = data[Carousel3];
+
                 });
         }
         
