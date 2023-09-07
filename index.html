@@ -23,31 +23,31 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <h4 id="Carousel0">Web programming <strong>[frontend]</strong></h4>
-                        <img src="source/html-5.png" alt="html-5">
-                        <img src="source/CSS.png" alt="css">
-                        <img src="source/bootstrap" alt="bootstrap">
-                        <img src="source/javascript" alt="javascript">
+                        <img src="source/html-5.png" width="40" alt="html-5">
+                        <img src="source/CSS.png" width="40" alt="css">
+                        <img src="source/bootstrap" width="40" alt="bootstrap">
+                        <img src="source/javascript" width="40" alt="javascript">
                       </div>
                       <div class="carousel-item">
                         <h4 id="Carousel1">Web programming <strong>[backend]</strong></h4>
-                        <img src="source/python.jpg" alt="python">
-                        <img src="source/flask" alt="flask">
-                        <img src="source/fastapi" alt="fastapi">
-                        <img src="source/sqlachemy" alt="sqlachemy">
+                        <img src="source/python.jpg" width="40" alt="python">
+                        <img src="source/flask" width="40" alt="flask">
+                        <img src="source/fastapi" width="40" alt="fastapi">
+                        <img src="source/sqlachemy" width="40" alt="sqlachemy">
                       </div>
                       <div class="carousel-item">
                         <h4 id="Carousel2">Databases</h4>
-                        <img src="source/sqlite3" alt="sqlite 3">
-                        <img src="source/postgresql" alt="postregresql">
-                        <img src="source/mongodb" alt="mongodb">
-                        <img src="source/mariadb" alt="mariadb">
+                        <img src="source/sqlite3" width="40" alt="sqlite 3">
+                        <img src="source/postgresql" width="40" alt="postregresql">
+                        <img src="source/mongodb" width="40" alt="mongodb">
+                        <img src="source/mariadb" width="40" alt="mariadb">
                       </div>
                       <div class="carousel-item">
-                      <h4 id="Carousel3">Software developpement</h4>
-                      <img src="source/c" alt="c">
-                      <img src="source/c#" alt="c#">
-                      <img src="source/vb" alt="vb">
-                    </div>
+                        <h4 id="Carousel3">Software developpement</h4>
+                        <img src="source/c" width="40" alt="c">
+                        <img src="source/c#" width="40" alt="c#">
+                        <img src="source/vb" width="40" alt="vb">
+                        </div>
                     </div>
                     
                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -193,6 +193,10 @@
                         document.getElementById(answer).textContent = data['Used Language'];
                         answer = 'Visit Project\'s Page' + i;
                         document.getElementById(answer).textContent = data['Visit Project\'s Page'];
+                    }
+                    for (let i = 0; i < 4; i++){
+                        let answer = 'Carousel' + i;
+                        document.getElementById(answer).textContent = data[answer];
                     }
                 });
         }

@@ -1,9 +1,13 @@
 {
-    "My Project": "My Project",
+    "My Project": "My Projects",
     "Learn More": "Learn More",
     "Project's Details":"Project's Details",
     "Realisation Date": "Realisation date:",
     "Made For": "Made for:",
     "Used Language": "Used language:",
-    "Visit Project's Page": "Visit project's page"
+    "Visit Project's Page": "Visit project's page",
+    "Carousel0": "Web Programming",
+    "Carousel1": "Web Programming",
+    "Carousel2": "Databases",
+    "Carousel3": "Software Developpement"
 }
