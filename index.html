@@ -211,6 +211,10 @@
                 .then(data => {
                     document.getElementById('AboutMe').textContent = data['AboutMe'];
                     document.getElementById('AboutMeText').textContent = data['AboutMeText'];
+                    document.getElementById('ContactInfo').textContent = data['ContactInfo'];
+                    document.getElementById('Follow').textContent = data['Follow'];
+                    document.getElementById('CV').textContent = data['CV'];
+                    document.getElementById('Email').textContent = data['Email'];
                     document.getElementById('Carousel0').textContent = data['Carousel0'];
                     document.getElementById('Carousel1').textContent = data['Carousel1'];
                     document.getElementById('Carousel2').textContent = data['Carousel2'];
@@ -230,8 +234,6 @@
                         answer = 'Visit Project\'s Page' + i;
                         document.getElementById(answer).textContent = data['Visit Project\'s Page'];
                     }
-
-
                 });
         }
         
