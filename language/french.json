@@ -1,6 +1,10 @@
 {
     "AboutMe": "A Propos de moi",
-    "AboutMeText": "Bonjour, Je m'appel Alexandre Molina, j'ai 19 ans et je suis en deuxième année chez EPITECH technology. C'est dans cette section que je mentionnerais si je suis à la recherche d'un stage. Sur ce site, vous pourrez voir quelques projets que je mets en avant",
+    "AboutMeText": "Bonjour, Je m'appelle Alexandre Molina, j'ai 19 ans et je suis en deuxième année chez EPITECH technology. C'est dans cette section que je mentionnerais si je suis à la recherche d'un stage. Sur ce site, vous pourrez voir quelques projets que je mets en avant",
+    "ContactInfo": "Me Contacter",
+    "Follow":"Me suivre sur Linkedin",
+    "CV":"Imprimer mon CV",
+    "Email": "M'envoyer un email", 
     "My Project": "Mes Projets",
     "Learn More": "En Savoir Plus",
     "Project's Details":"Détails du Projet",

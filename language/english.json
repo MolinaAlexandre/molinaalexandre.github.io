@@ -1,6 +1,10 @@
 {
     "AboutMe": "About Me",
     "AboutMeText": "Hello, My name is Alexandre Molina, i am currently a second year at EPITECH technology, here will be shown if i am looking for an internship. You'll be able to look for some of my project directly on this page !",
+    "ContactInfo": "Contact info",
+    "Follow":"Follow me on Linkedin",
+    "CV":"Print my CV",
+    "Email": "Email me",    
     "My Project": "My Projects",
     "Learn More": "Learn More",
     "Project's Details":"Project's Details",
