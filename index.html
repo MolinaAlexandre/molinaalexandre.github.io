@@ -7,7 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-        /* Changer la couleur des indicateurs (les puces) */
         .carousel-indicators li {
             background-color: black;
         }
@@ -20,8 +19,8 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-8 col-md-7 py-4">
-                <h4 class="text-white">About Me</h4>
-                <p class="text-muted">Hello, My name is Alexandre Molina, i am currently a second year at EPITECH technology, here will be shown if i am looking for an internship. You'll be able to look for some of my project directly on this page !</p>
+                <h4 id="AboutMe" class="text-white">About Me</h4>
+                <p id="AboutMeText" class="text-muted">Hello, My name is Alexandre Molina, i am currently a second year at EPITECH technology, here will be shown if i am looking for an internship. You'll be able to look for some of my project directly on this page !</p>
               </div>
               <div class="col-sm-4 offset-md-1 py-4">
                 <h4 class="text-white">Contact info</h4>
@@ -37,7 +36,7 @@
         <div class="navbar navbar-dark bg-dark shadow-sm">
           <div class="container">
             <a href="#" class="navbar-brand d-flex align-items-center">
-              <strong>Presentation of my work</strong>
+              <strong>Alexandre Molina</strong>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
               aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -210,6 +209,8 @@
             fetch(jsonURL)
                 .then(response => response.json())
                 .then(data => {
+                    document.getElementById('AboutMe').textContent = data['AboutMe'];
+                    document.getElementById('AboutMeText').textContent = data['AboutMeText'];
                     document.getElementById('Carousel0').textContent = data['Carousel0'];
                     document.getElementById('Carousel1').textContent = data['Carousel1'];
                     document.getElementById('Carousel2').textContent = data['Carousel2'];
