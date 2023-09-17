@@ -10,6 +10,7 @@ function chargerTraductions(langue) {
             document.getElementById('Follow').textContent = data['Follow'];
             document.getElementById('CV').textContent = data['CV'];
             document.getElementById('Email').textContent = data['Email'];
+            document.getElementById('Github').textContent = data['Github'];
             document.getElementById('Carousel0').textContent = data['Carousel0'];
             document.getElementById('Carousel1').textContent = data['Carousel1'];
             document.getElementById('Carousel2').textContent = data['Carousel2'];
