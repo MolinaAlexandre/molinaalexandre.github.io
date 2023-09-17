@@ -1,0 +1,22 @@
+name: Publication du site web
+
+on:
+  push:
+    branches:
+      - main  # Changez cette branche en fonction de votre configuration
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v2
+
+      # Ajoutez ici d'autres étapes pour construire et déployer votre site web
+
+      # Exemple d'étape pour téléverser les rapports de couverture vers Codecov
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
