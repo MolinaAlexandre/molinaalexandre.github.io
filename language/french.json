@@ -18,5 +18,8 @@
     "Carousel2": "Base de Données",
     "Carousel3": "Développement Logiciel",
     "Next": "Suivant",
-    "Previous": "Précédent"
+    "Previous": "Précédent",
+    "DescriptionDetails0": "Projet réalisé à l'occasion de la JAM Epitech n°3 portant sur le theme [Yin & Yang].",
+    "DescriptionDetails1": "Projet réalisé dans le cadre d'un projet de première année à Epitech, réalisé en utilisant la librairie Ncurse.",
+    "DescriptionDetails2": "Projet réalisé à l'occasion de préparation pour des quiz, il suffit de renseigner la fiche de question avec les réponses."
 }

@@ -15,6 +15,7 @@ function chargerTraductions(langue) {
             document.getElementById('Carousel1').textContent = data['Carousel1'];
             document.getElementById('Carousel2').textContent = data['Carousel2'];
             document.getElementById('Carousel3').textContent = data['Carousel3'];
+
             document.getElementById('My Project').textContent = data['My Project'];
             for (let i = 0; i < 3; i++){
                 let answer = 'Learn More' + i;
@@ -29,6 +30,9 @@ function chargerTraductions(langue) {
                 document.getElementById(answer).textContent = data['Used Language'];
                 answer = 'Visit Project\'s Page' + i;
                 document.getElementById(answer).textContent = data['Visit Project\'s Page'];
+                answer = 'DescriptionDetails' + i;
+                document.getElementById(answer).textContent = data[answer];
+
             }
         });
 }
